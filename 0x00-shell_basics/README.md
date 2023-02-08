@@ -5,3 +5,4 @@ Write a script that prints the absolute path name of the current working directo
 3-listfiles, list all files in a long format
 4-listmorefiles, lists hidden files also
 5-listfilesdigitonly, lists files digitaly
+6-firstdirectory, creates a directory in /tmp/
