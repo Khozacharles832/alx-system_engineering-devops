@@ -4,3 +4,4 @@ Write a script that prints the absolute path name of the current working directo
 2-bring_me_home
 3-listfiles, list all files in a long format
 4-listmorefiles, lists hidden files also
+5-listfilesdigitonly, lists files digitaly
