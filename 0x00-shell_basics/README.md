@@ -7,3 +7,4 @@ Write a script that prints the absolute path name of the current working directo
 5-listfilesdigitonly, lists files digitaly
 6-firstdirectory, creates a directory in /tmp/
 7-movethatfile, moves betty into my_first_directory
+8-firstdelete, delete betty from directory
