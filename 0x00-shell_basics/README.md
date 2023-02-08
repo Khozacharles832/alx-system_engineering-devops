@@ -6,3 +6,4 @@ Write a script that prints the absolute path name of the current working directo
 4-listmorefiles, lists hidden files also
 5-listfilesdigitonly, lists files digitaly
 6-firstdirectory, creates a directory in /tmp/
+7-movethatfile, moves betty into my_first_directory
