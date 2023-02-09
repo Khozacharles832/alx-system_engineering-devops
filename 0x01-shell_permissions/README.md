@@ -8,3 +8,7 @@ Is a bash script that changes the current user's name to betty.
 .1-Who am i.
 
 Is a bash script that prints the name of the effective user.
+
+.2-groups.
+
+Is a bash script that displays the number of groups a user is associated with
