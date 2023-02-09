@@ -20,3 +20,7 @@ is a bas script that changes the file ownership.
 .4-empty.
 
 is a bash script for creating a file called hello.
+
+.5-execute.
+
+is a bsh script that adds an execute permission to the hello file.
