@@ -24,3 +24,7 @@ is a bash script for creating a file called hello.
 .5-execute.
 
 is a bsh script that adds an execute permission to the hello file.
+
+.6-Multi permissions.
+
+is a bsh script for adding multiple permissions.
