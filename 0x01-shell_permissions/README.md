@@ -11,4 +11,8 @@ Is a bash script that prints the name of the effective user.
 
 .2-groups.
 
-Is a bash script that displays the number of groups a user is associated with
+Is a bash script that displays the number of groups a user is associated with.
+
+.3-new group.
+
+is a bas script that changes the file ownership.
