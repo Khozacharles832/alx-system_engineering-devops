@@ -1,5 +1,4 @@
 Shell redirectioins
 
-1. 0-hello world
-
-this bsh script prints hello world on the standard output and a new line.
+1. 0-hello, WORLD
+this script print hello,world and a new line.
