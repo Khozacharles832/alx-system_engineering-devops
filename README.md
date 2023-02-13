@@ -1,2 +1,6 @@
-0. Where am I? 
-Write a script that prints the absolute path name of the current working directory.
+
+Shell redirectioins
+
+1. 0-hello,world
+
+this bash script prints hello,world and a new line.
