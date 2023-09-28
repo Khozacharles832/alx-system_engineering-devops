@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+# A script that prints good and bad luck
+
+
+# Initialize counter
+i=1
+
+#Looping conditions
+while [ $i -lt 11 ]
+do
+	if [ $i = 4 ]
+	then
+		echo "bad luck"
+	elif [ $i = 8 ]
+	then
+		echo "good luck"
+	else
+		echo "Best School"
+	fi
+
+	#Increment counter
+	i=$((i + 1))
+done

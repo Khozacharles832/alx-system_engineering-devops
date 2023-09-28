@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# A script to print Best School 10 times and HI @9
+
+
+#initialize a counter
+i=0
+
+#looping conditions
+while [ $i -lt 11 ]
+do
+	if [ $i = 9 ]
+	then
+		echo "HI"
+	else
+		echo "Best School"
+	fi
+
+	#Increment counter
+	i=$((i + 1))
+done
