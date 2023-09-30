@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#displays i am alive
+
+echo "I ma alive!"
