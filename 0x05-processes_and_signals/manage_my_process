@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
 #displays i am alive
 
-echo "I ma alive!"
+while true
+do
+	sudo bash -c 'echo "I am alive!" >> /tmp/my_process'
+	sleep 2
+done

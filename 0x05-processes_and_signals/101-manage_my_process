@@ -1,51 +1,26 @@
 #!/usr/bin/env bash
 #This is an init script
 
-FILE="/var/run/my_process.pid"
+if [ "${1}" == "start" ]
+then
+	./manage_my_process &
+	touch /var/run/my_process.pid
+	echo "$!" > /var/run/my_process.pid
+	echo "manage_my_process started"
+elif [ "${1}" == "stop" ]
+then
+	echo "manage_my_process stopped"
+	kill "$(cat /var/run/my_process.pid)"
+	rm /var/run/my_process.pid
 
-start() {
-	if [ "$FILE" ]
-	then
-		echo "manage_my_process is already running"
-	else
-		echo "starting manage_my_process..."
-		/bin/bash/path/to/manage_my_process &
-		echo "$!" > "$FILE"
-		echo "manage_my_process started"
-	fi
-}
+elif [ "${1}" == "restart" ]
+then
+	kill "$(cat /var/run/my_process.pid)"
+	rm /var/run/my_process.pid
+	./manage_my_process &
+	touch /var/run/my_process.pid
+	echo "manage_my_process restarted"
 
-stop() {
-	if [ -f "$FILE" ]
-	then
-		echo "stopping manage_my_process..."
-		kill "$(cut "$FILE")"
-		rm -f "$FILE"	
-		echo "manage_my_process stopped."
-	else
-		echo "manage_my_process is not running."
-	fi
-}
-
-restart() {
-	stop
-	start
-	echo "manage_my_process restarted."
-}
-
-case "$1" in
-	start)
-		start
-	;;
-	stop)
-		stop
-	;;
-	restart)
-		restart
-	;;
-	*)
-	echo "usage: $0 {start|stop|restart}"
-	exit 1
-	;;
-esac
-exit 0
+else
+	echo "Usage: manage_my_process {start|stop|restart}"
+fi
