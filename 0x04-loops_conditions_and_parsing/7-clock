@@ -2,14 +2,13 @@
 #Displays the time of 12 hours and 59 minutes
 
 HOURS=0
-while [ $HOURS -lt 13 ]
+
+while [ $HOURS -le 12 ]
 do
 	echo "Hour: $HOURS"
-	MINUTES=1
-	while [ $MINUTES -lt 60 ]
+	for minute in {1..59}
 	do
-		echo $MINUTES
-		let MINUTES+=1
+		echo "$minute"
 	done
-		let HOURS+=1
+	HOURS=$((HOURS + 1))
 done
