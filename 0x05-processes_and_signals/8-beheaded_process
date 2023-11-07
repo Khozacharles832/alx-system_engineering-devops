@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-#Bash script that kills 7-Highlander
-
-kill -9 "$(pgrep -f highlander)"

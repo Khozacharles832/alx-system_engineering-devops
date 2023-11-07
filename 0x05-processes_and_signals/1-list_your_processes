@@ -1,6 +1,0 @@
-#!/usr/bin/env bash
-#Displays a list of all the current processes
-#in a user friendly format
-#show the user hierachy
-
-ps -a -x -u -f
