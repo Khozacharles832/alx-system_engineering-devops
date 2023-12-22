@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+#The 7-hilander_process killer
+
+
+kill -9 "$(pgrep -f 7-hilander)"

@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#Displays a pid with process name
+#The process name must contain the word bash
+
+
+pgrep -1 bash
