@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#The 7-hilander_process killer
+# Kills the process 7-highlander.
 
+pkill -f -SIGKILL 7-highlander
 
-kill -9 "$(pgrep -f 7-hilander)"
